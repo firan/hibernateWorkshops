@@ -1,11 +1,12 @@
-package com.example.productdata.Entity;
+package com.example.productdata.Entity.singletable;
 
 import javax.persistence.*;
 
 @Entity
+@Table(name = "payment")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "pmode", discriminatorType = DiscriminatorType.STRING)
-public abstract class Payment {
+public abstract class PaymentST {
     @Id
     private int id;
     private double amount;

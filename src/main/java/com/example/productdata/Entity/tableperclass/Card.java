@@ -1,11 +1,9 @@
-package com.example.productdata.Entity;
+package com.example.productdata.Entity.tableperclass;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue("cc")
-public class CreditCard extends Payment {
+public class Card extends PaymentTPC {
     private String cardnumber;
 
     public String getCardnumber() {

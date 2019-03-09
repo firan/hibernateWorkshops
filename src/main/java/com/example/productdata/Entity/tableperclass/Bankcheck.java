@@ -1,11 +1,9 @@
-package com.example.productdata.Entity;
+package com.example.productdata.Entity.tableperclass;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue("ch")
-public class Check extends Payment {
+public class Bankcheck extends PaymentTPC {
     private String checknumber;
 
     public String getChecknumber() {

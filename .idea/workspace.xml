@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ff822f3-1bf9-4613-992b-b31e9bb3b267" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Check.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/CreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/productdata/HibernateInheritanceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jbankcheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jcard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jpayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/Bankcheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/PaymentTPC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/JPaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentTPCRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/productdata/JoinedHibernateInheritanceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/productdata/TPCHibernateInheritanceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/productdata/StudentApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/productdata/StudentApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/productdata/Repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/productdata/Repository/StudentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/productdata/StudentApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/productdata/StudentApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/singletable/Check.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/singletable/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/singletable/PaymentST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentSTRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/productdata/HibernateInheritanceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/productdata/STHibernateInheritanceApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,25 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProductdataApplicationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/ProductdataApplicationTests.java">
+      <file leaf-file-name="STHibernateInheritanceApplicationTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/STHibernateInheritanceApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1496#1497#0" expanded="true" />
-                <element signature="e#1529#1530#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/StudentRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+            <state relative-caret-position="121">
+              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,44 +42,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentApplicationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/StudentApplicationTests.java">
+      <file leaf-file-name="TPCHibernateInheritanceApplicationTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/TPCHibernateInheritanceApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="301">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
-                <element signature="e#1607#1608#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Payment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Payment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#108#109#0" expanded="true" />
-                <element signature="e#133#134#0" expanded="true" />
-                <element signature="e#166#167#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
-                <element signature="e#256#257#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentRepository.java">
+      <file leaf-file-name="Jcard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jcard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" column="14" selection-start-line="6" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,67 +66,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateInheritanceApplicationTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/HibernateInheritanceApplicationTests.java">
+      <file leaf-file-name="Jpayment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jpayment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreditCard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/CreditCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Check.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Check.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#130#131#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeedataApplicationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/EmployeedataApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/EmployeeRepository.java">
+      <file leaf-file-name="Jbankcheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jbankcheck.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="80" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="80" />
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JPaymentRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/JPaymentRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JoinedHibernateInheritanceApplicationTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/JoinedHibernateInheritanceApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bankcheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/Bankcheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaymentTPCRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentTPCRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/Card.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -191,7 +163,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Check.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/CreditCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/singletable/PaymentST.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/productdata/HibernateInheritanceApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/PaymentTPC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/BankCheck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/Card.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentTPCRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/productdata/TPCHibernateInheritanceApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Bankcheck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jpayment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jcard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jbankcheck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/JPaymentRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/example/productdata/JoinedHibernateInheritanceApplicationTests.java" />
       </list>
     </option>
   </component>
@@ -266,6 +250,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="productdata" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="joined" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="productdata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productdata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="productdata" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="tableperclass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="productdata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="productdata" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="productdata" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -318,7 +322,11 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.productdata" />
       <recent name="com.example.productdata.Repository" />
+      <recent name="com.example.productdata.Entity.tableperclass" />
       <recent name="com.example.productdata.Entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,11 +341,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HibernateInheritanceApplicationTests.createCheckPayment">
+  <component name="RunManager" selected="JUnit.JoinedHibernateInheritanceApplicationTests.createJoinedCheckPayment">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="HibernateInheritanceApplicationTests.createCheckPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JoinedHibernateInheritanceApplicationTests.createJoinedCheckPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productdata" />
       <extension name="coverage">
         <pattern>
@@ -348,8 +356,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.productdata" />
-      <option name="MAIN_CLASS_NAME" value="com.example.productdata.HibernateInheritanceApplicationTests" />
-      <option name="METHOD_NAME" value="createCheckPayment" />
+      <option name="MAIN_CLASS_NAME" value="com.example.productdata.JoinedHibernateInheritanceApplicationTests" />
+      <option name="METHOD_NAME" value="createJoinedCheckPayment" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -360,7 +368,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="HibernateInheritanceApplicationTests.createPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JoinedHibernateInheritanceApplicationTests.createJoinedCreditCardPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productdata" />
       <extension name="coverage">
         <pattern>
@@ -371,8 +379,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.productdata" />
-      <option name="MAIN_CLASS_NAME" value="com.example.productdata.HibernateInheritanceApplicationTests" />
-      <option name="METHOD_NAME" value="createPayment" />
+      <option name="MAIN_CLASS_NAME" value="com.example.productdata.JoinedHibernateInheritanceApplicationTests" />
+      <option name="METHOD_NAME" value="createJoinedCreditCardPayment" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -383,7 +391,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="StudentApplicationTests.findAllStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="STHibernateInheritanceApplicationTests.createSTCreditCardPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productdata" />
       <extension name="coverage">
         <pattern>
@@ -394,8 +402,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.productdata" />
-      <option name="MAIN_CLASS_NAME" value="com.example.productdata.StudentApplicationTests" />
-      <option name="METHOD_NAME" value="findAllStudents" />
+      <option name="MAIN_CLASS_NAME" value="com.example.productdata.STHibernateInheritanceApplicationTests" />
+      <option name="METHOD_NAME" value="createSTCreditCardPayment" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -406,7 +414,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="StudentApplicationTests.findAllStudentsNQ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TPCHibernateInheritanceApplicationTests.createTPCCheckPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productdata" />
       <extension name="coverage">
         <pattern>
@@ -417,8 +425,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.productdata" />
-      <option name="MAIN_CLASS_NAME" value="com.example.productdata.StudentApplicationTests" />
-      <option name="METHOD_NAME" value="findAllStudentsNQ" />
+      <option name="MAIN_CLASS_NAME" value="com.example.productdata.TPCHibernateInheritanceApplicationTests" />
+      <option name="METHOD_NAME" value="createTPCCheckPayment" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -429,7 +437,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="StudentApplicationTests.findByFirstNameNQ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TPCHibernateInheritanceApplicationTests.createTPCCreditCardPayment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="productdata" />
       <extension name="coverage">
         <pattern>
@@ -440,8 +448,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.example.productdata" />
-      <option name="MAIN_CLASS_NAME" value="com.example.productdata.StudentApplicationTests" />
-      <option name="METHOD_NAME" value="findByFirstNameNQ" />
+      <option name="MAIN_CLASS_NAME" value="com.example.productdata.TPCHibernateInheritanceApplicationTests" />
+      <option name="METHOD_NAME" value="createTPCCreditCardPayment" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -496,19 +504,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ProductdataApplication" />
-      <item itemvalue="JUnit.StudentApplicationTests.findAllStudents" />
-      <item itemvalue="JUnit.StudentApplicationTests.findAllStudentsNQ" />
-      <item itemvalue="JUnit.StudentApplicationTests.findByFirstNameNQ" />
-      <item itemvalue="JUnit.HibernateInheritanceApplicationTests.createPayment" />
-      <item itemvalue="JUnit.HibernateInheritanceApplicationTests.createCheckPayment" />
+      <item itemvalue="JUnit.STHibernateInheritanceApplicationTests.createSTCreditCardPayment" />
+      <item itemvalue="JUnit.TPCHibernateInheritanceApplicationTests.createTPCCreditCardPayment" />
+      <item itemvalue="JUnit.TPCHibernateInheritanceApplicationTests.createTPCCheckPayment" />
+      <item itemvalue="JUnit.JoinedHibernateInheritanceApplicationTests.createJoinedCreditCardPayment" />
+      <item itemvalue="JUnit.JoinedHibernateInheritanceApplicationTests.createJoinedCheckPayment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HibernateInheritanceApplicationTests.createCheckPayment" />
-        <item itemvalue="JUnit.HibernateInheritanceApplicationTests.createPayment" />
-        <item itemvalue="JUnit.StudentApplicationTests.findByFirstNameNQ" />
-        <item itemvalue="JUnit.StudentApplicationTests.findAllStudentsNQ" />
-        <item itemvalue="JUnit.StudentApplicationTests.findAllStudents" />
+        <item itemvalue="JUnit.JoinedHibernateInheritanceApplicationTests.createJoinedCheckPayment" />
+        <item itemvalue="JUnit.JoinedHibernateInheritanceApplicationTests.createJoinedCreditCardPayment" />
+        <item itemvalue="JUnit.TPCHibernateInheritanceApplicationTests.createTPCCheckPayment" />
+        <item itemvalue="JUnit.TPCHibernateInheritanceApplicationTests.createTPCCreditCardPayment" />
+        <item itemvalue="JUnit.STHibernateInheritanceApplicationTests.createSTCreditCardPayment" />
       </list>
     </recent_temporary>
   </component>
@@ -522,32 +530,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552151392436</updated>
-      <workItem from="1552151394846" duration="14802000" />
+      <workItem from="1552151394846" duration="16509000" />
     </task>
+    <task id="LOCAL-00001" summary="inheritance">
+      <created>1552169781191</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552169781192</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentApplicationTests_testStudentCreate - 2019.03.09 at 22h 25m 51s.xml">
-      <configuration name="StudentApplicationTests.testStudentCreate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentApplicationTests_testStudentCreate - 2019.03.09 at 22h 25m 57s.xml">
-      <configuration name="StudentApplicationTests.testStudentCreate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentApplicationTests_testStudentCreate - 2019.03.09 at 22h 26m 02s.xml">
-      <configuration name="StudentApplicationTests.testStudentCreate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentApplicationTests_findAllStudents - 2019.03.09 at 22h 26m 13s.xml">
-      <configuration name="StudentApplicationTests.findAllStudents" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentApplicationTests_findAllStudents - 2019.03.09 at 22h 28m 55s.xml">
-      <configuration name="StudentApplicationTests.findAllStudents" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentApplicationTests_findAllStudentsNQ - 2019.03.09 at 22h 32m 57s.xml">
-      <configuration name="StudentApplicationTests.findAllStudentsNQ" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentApplicationTests_findByFirstNameNQ - 2019.03.09 at 22h 36m 11s.xml">
-      <configuration name="StudentApplicationTests.findByFirstNameNQ" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HibernateInheritanceApplicationTests_createPayment - 2019.03.09 at 23h 07m 54s.xml">
       <configuration name="HibernateInheritanceApplicationTests.createPayment" configurationId="JUnit" />
     </history-entry>
@@ -557,12 +552,34 @@
     <history-entry file="HibernateInheritanceApplicationTests_createCheckPayment - 2019.03.09 at 23h 11m 26s.xml">
       <configuration name="HibernateInheritanceApplicationTests.createCheckPayment" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HibernateInheritanceApplicationTests_createSTCreditCardPayment - 2019.03.09 at 23h 19m 24s.xml">
+      <configuration name="HibernateInheritanceApplicationTests.createSTCreditCardPayment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HibernateInheritanceApplicationTests_createSTCreditCardPayment - 2019.03.09 at 23h 20m 03s.xml">
+      <configuration name="HibernateInheritanceApplicationTests.createSTCreditCardPayment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HibernateInheritanceApplicationTests_createSTCreditCardPayment - 2019.03.09 at 23h 20m 22s.xml">
+      <configuration name="HibernateInheritanceApplicationTests.createSTCreditCardPayment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HibernateInheritanceApplicationTests_createSTCheckPayment - 2019.03.09 at 23h 21m 32s.xml">
+      <configuration name="HibernateInheritanceApplicationTests.createSTCheckPayment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HibernateInheritanceApplicationTests_createSTCreditCardPayment - 2019.03.09 at 23h 22m 08s.xml">
+      <configuration name="HibernateInheritanceApplicationTests.createSTCreditCardPayment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TPCHibernateInheritanceApplicationTests_createTPCCreditCardPayment - 2019.03.09 at 23h 29m 30s.xml">
+      <configuration name="TPCHibernateInheritanceApplicationTests.createTPCCreditCardPayment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TPCHibernateInheritanceApplicationTests_createTPCCheckPayment - 2019.03.09 at 23h 29m 37s.xml">
+      <configuration name="TPCHibernateInheritanceApplicationTests.createTPCCheckPayment" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14802000" />
+    <option name="totallyTimeSpent" value="16509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1032" height="1055" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -600,6 +617,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inheritance" />
+    <option name="LAST_COMMIT_MESSAGE" value="inheritance" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/ProductdataApplication.java">
@@ -729,37 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#108#109#0" expanded="true" />
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/EmployeeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="80" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -778,10 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/Check.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/singletable/Check.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#130#131#0" expanded="true" />
@@ -792,10 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/CreditCard.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/singletable/CreditCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#262#263#0" expanded="true" />
@@ -806,13 +800,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/HibernateInheritanceApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentSTRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/singletable/PaymentST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/PaymentTPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/tableperclass/Bankcheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/PaymentTPCRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/STHibernateInheritanceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/TPCHibernateInheritanceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jpayment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jcard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Entity/joined/Jbankcheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/productdata/Repository/JPaymentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/productdata/JoinedHibernateInheritanceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
         </state>
       </provider>
     </entry>
