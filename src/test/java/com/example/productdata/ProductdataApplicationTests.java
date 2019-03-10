@@ -12,11 +12,11 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.swing.*;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
+// Queries
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ProductdataApplicationTests {

@@ -12,6 +12,7 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+// Query, Delete, Native Query
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class StudentApplicationTests {
