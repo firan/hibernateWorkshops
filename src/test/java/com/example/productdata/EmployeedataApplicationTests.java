@@ -30,7 +30,7 @@ public class EmployeedataApplicationTests {
     public void testCreateEmployee(){
         Employee employee = new Employee();
         employee.setName("Albin");
-        employee.setId(2);
+        employee.setId(3);
         Address address = new Address();
         address.setStreetaddress("Mokotowska");
         address.setCity("Warsaw");
