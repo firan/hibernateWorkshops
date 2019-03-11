@@ -2,6 +2,7 @@ package com.example.productdata;
 
 import com.example.productdata.Entity.Product;
 import com.example.productdata.Repository.ProductRepository;
+import com.mysql.cj.Session;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -23,6 +26,9 @@ public class ProductdataApplicationTests {
 
     @Autowired
     ProductRepository repository;
+
+    @Autowired
+    EntityManager entityManager;
 
     @Test
     public void contextLoads() {
@@ -56,7 +62,6 @@ public class ProductdataApplicationTests {
 
     @Test
     public void testDelete() {
-        Product product = repository.findById(1).get();
         if (repository.existsById(1)) {
             repository.deleteById(1);
         }
@@ -90,5 +95,29 @@ public class ProductdataApplicationTests {
     public void testFindAllPagingAndSorting() {
         Pageable pageable = PageRequest.of(1, 2, Sort.Direction.DESC, "name");
         repository.findAll(pageable).forEach(p -> System.out.println(p.getName()));
+    }
+
+//    Cache
+
+    @Test
+//    @Transactional // enable/disable to show level 1 caching
+    public void testCaching() {
+        Session session = entityManager.unwrap(Session.class);
+        repository.findById(1);
+        repository.findById(1);
+        repository.findById(1);
+    }
+
+    @Test
+    @Transactional
+    public void testCachingWithEvictFromCache() {
+        org.hibernate.Session session = entityManager.unwrap(org.hibernate.Session.class);
+        Product product = repository.findById(1).get();
+
+        repository.findById(1);
+
+        session.evict(product); // level 1 cache remove
+
+        repository.findById(1);
     }
 }
