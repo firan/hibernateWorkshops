@@ -37,7 +37,7 @@ public class ProductdataApplicationTests {
     @Test
     public void testCreate() {
         Product product = new Product();
-        product.setId(1);
+        product.setId(15);
         product.setName("IphoneX");
         product.setDesc("Awesome");
         product.setPrice(1000d);
