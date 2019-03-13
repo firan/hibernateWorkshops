@@ -111,8 +111,6 @@ public class JdbcTest {
             System.out.println("Database connection successful!\n");
 
             // 2. Create a statement
-            statement = connection.createStatement();
-
             String updateSQL = "INSERT INTO product (id, name, description, price) VALUES (?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(updateSQL);
             preparedStatement.setInt(1, 1001);
@@ -129,10 +127,6 @@ public class JdbcTest {
             exc.printStackTrace();
         }
         finally {
-            if (statement != null) {
-                statement.close();
-            }
-
             if (connection != null) {
                 connection.close();
             }
