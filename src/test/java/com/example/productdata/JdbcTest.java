@@ -3,7 +3,9 @@ package com.example.productdata;
 import com.example.productdata.Entity.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.core.env.Environment;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.sql.*;
@@ -12,6 +14,9 @@ import java.util.HashMap;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class JdbcTest {
+
+//    @Autowired
+//    private Environment env;
 
     @Test
     public void testJDBCConnectionSelect() throws SQLException {
@@ -23,6 +28,7 @@ public class JdbcTest {
         try {
             // 1. Get a connection to database
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "junior" , "programmer");
+//            connection = DriverManager.getConnection(env.getProperty("spring.datasource.url"), "junior" , "programmer");
 
             System.out.println("Database connection successful!\n");
 
