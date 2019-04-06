@@ -22,7 +22,7 @@ public class JdbcTest {
 
         try {
             // 1. Get a connection to database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "junior" , "programmer");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "junior" , "programmer");
 
             System.out.println("Database connection successful!\n");
 
@@ -72,14 +72,14 @@ public class JdbcTest {
 
         try {
             // 1. Get a connection to database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "junior" , "programmer");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "junior" , "programmer");
 
             System.out.println("Database connection successful!\n");
 
             // 2. Create a statement
             statement = connection.createStatement();
 
-            String sql = "INSERT INTO product (id, name, description, price) VALUES (155, 'lenovo', 'laptop', 10000.00)";
+            String sql = "INSERT INTO product (id, name, description, price) VALUES (154, 'lenovo', 'laptop', 10000.00)";
             // 3. Execute SQL update
             int updateCount = statement.executeUpdate(sql);
 
@@ -106,7 +106,7 @@ public class JdbcTest {
 
         try {
             // 1. Get a connection to database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "junior" , "programmer");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "junior" , "programmer");
 
             System.out.println("Database connection successful!\n");
 
