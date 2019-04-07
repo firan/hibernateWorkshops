@@ -1,7 +1,7 @@
 package com.example.productdata;
 
 import com.example.productdata.Entity.*;
-import com.example.productdata.Repository.CustomerRepository;
+import com.example.productdata.Repository.ContactRepository;
 import com.example.productdata.Repository.LicenseRepository;
 import com.example.productdata.Repository.ProgrammerRepository;
 import org.junit.Test;
@@ -21,7 +21,7 @@ import java.util.Set;
 public class AssociationsApplicationTests {
 
     @Autowired
-    CustomerRepository customerRepository;
+    ContactRepository contactRepository;
 
     @Autowired
     ProgrammerRepository programmerRepository;
@@ -34,43 +34,43 @@ public class AssociationsApplicationTests {
     }
 
     @Test
-    public void testCreateCustomer() {
-        Customer customer = new Customer();
-        customer.setName("Rambo");
-//        HashSet<PhoneNumber> numbers = new HashSet<PhoneNumber>();
+    public void testCreateContact() {
+        Contact contact = new Contact();
+        contact.setName("Rambo");
+        HashSet<PhoneNumber> numbers = new HashSet<PhoneNumber>();
         PhoneNumber ph1 = new PhoneNumber();
         ph1.setPhonenumber("555555555");
         ph1.setType("cellphone");
-//        ph1.setCustomer(customer);
+        ph1.setContact(contact);
 
         PhoneNumber ph2 = new PhoneNumber();
         ph2.setPhonenumber("123456789");
         ph2.setType("home phone number");
-//        ph2.setCustomer(customer);
+        ph2.setContact(contact);
 
-//        numbers.add(ph1);
-//        numbers.add(ph2);
-//        customer.setNumbers(numbers);
-        customer.addPhonenumber(ph1);
-        customer.addPhonenumber(ph2);
-        customerRepository.save(customer);
+        numbers.add(ph1);
+        numbers.add(ph2);
+        contact.setNumbers(numbers);
+        contact.addPhonenumber(ph1);
+        contact.addPhonenumber(ph2);
+        contactRepository.save(contact);
     }
 
     @Test
-    public void testLoadCustomer() {
-        Customer customer = customerRepository.findById(4L).get();
-        System.out.println(customer.getName());
-        Set<PhoneNumber> numbers = customer.getNumbers();
+    public void testLoadContact() {
+        Contact contact = contactRepository.findById(4L).get();
+        System.out.println(contact.getName());
+        Set<PhoneNumber> numbers = contact.getNumbers();
         numbers.forEach(number -> System.out.println(number.getPhonenumber()));
     }
 
     @Test
-    public void testUpdateCustomer() {
-        Customer customer = customerRepository.findById(4L).get();
-        customer.setName("John");
-        Set<PhoneNumber> numbers = customer.getNumbers();
+    public void testUpdateContact() {
+        Contact contact = contactRepository.findById(4L).get();
+        contact.setName("John");
+        Set<PhoneNumber> numbers = contact.getNumbers();
         numbers.forEach(number -> number.setType("cell"));
-        customerRepository.save(customer);
+        contactRepository.save(contact);
     }
 
     @Test

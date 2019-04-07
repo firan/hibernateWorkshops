@@ -5,15 +5,15 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-public class Customer {
+public class Contact {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
-    private long customer_id;
+    private long contactId;
     private String name;
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "contact", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<PhoneNumber> numbers;
 
     public Set<PhoneNumber> getNumbers() {
@@ -24,12 +24,12 @@ public class Customer {
         this.numbers = numbers;
     }
 
-    public long getCustomer_id() {
-        return customer_id;
+    public long getContactId() {
+        return contactId;
     }
 
-    public void setCustomer_id(long customer_id) {
-        this.customer_id = customer_id;
+    public void setContactId(long contactId) {
+        this.contactId = contactId;
     }
 
     public String getName() {
@@ -45,7 +45,7 @@ public class Customer {
             if(numbers==null){
                 numbers = new HashSet<>();
             }
-            number.setCustomer(this);
+            number.setContact(this);
             numbers.add(number);
         }
     }

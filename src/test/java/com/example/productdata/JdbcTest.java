@@ -15,8 +15,8 @@ import java.util.HashMap;
 @SpringBootTest
 public class JdbcTest {
 
-//    @Autowired
-//    private Environment env;
+    @Autowired
+    private Environment env;
 
     @Test
     public void testJDBCConnectionSelect() throws SQLException {
@@ -27,8 +27,8 @@ public class JdbcTest {
 
         try {
             // 1. Get a connection to database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "junior" , "programmer");
-//            connection = DriverManager.getConnection(env.getProperty("spring.datasource.url"), "junior" , "programmer");
+//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "junior" , "programmer");
+            connection = DriverManager.getConnection(env.getProperty("spring.datasource.url"), "junior" , "programmer");
 
             System.out.println("Database connection successful!\n");
 

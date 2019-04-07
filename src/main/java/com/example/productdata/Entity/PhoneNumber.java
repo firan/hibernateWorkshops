@@ -12,15 +12,15 @@ public class PhoneNumber {
     private String type;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id")
-    private Customer customer;
+    @JoinColumn(name = "contactId")
+    private Contact contact;
 
-    public Customer getCustomer() {
-        return customer;
+    public Contact getContact() {
+        return contact;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setContact(Contact contact) {
+        this.contact = contact;
     }
 
     public long getId() {

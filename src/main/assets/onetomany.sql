@@ -1,15 +1,15 @@
 use mydb;
 
-create table customer(
+create table contact(
 id int PRIMARY KEY AUTO_INCREMENT,
 name varchar(20)
 );
 
 create table phone_number(
 id int PRIMARY KEY AUTO_INCREMENT,
-customer_id int,
+contact_id int,
 phonenumber varchar(20),
 type varchar(20),
- FOREIGN KEY (customer_id)
-REFERENCES customer(id)
+ FOREIGN KEY (contact_id)
+REFERENCES contact(id)
 );
